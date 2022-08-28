@@ -46,8 +46,13 @@ p {
   font-size: 16px;
 }
 
+p.speaker-small {
+  margin: 4px 4px 4px 4px;
+  font-size: 12px;
+}
+
 p.small {
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
   color: #515151;
 }
@@ -423,7 +428,7 @@ ul li {
   margin-bottom: 5px;
 }
 .speaker p {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 .speaker img:hover {
   opacity: .7;
@@ -472,7 +477,7 @@ ul li {
   opacity: 1;
   height: 150px;
   width: 150px;
-  margin: 25px auto;
+  margin: 5px auto;
   -webkit-transition: 0.5s all linear;
   transition: 0.5s all linear;
 }
