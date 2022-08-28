@@ -475,9 +475,9 @@ ul li {
 .partner .partner-box {
   display: block;
   opacity: 1;
-  height: 150px;
+  height: 100px;
   width: 150px;
-  margin: 5px auto;
+  margin: 2px auto;
   -webkit-transition: 0.5s all linear;
   transition: 0.5s all linear;
 }
