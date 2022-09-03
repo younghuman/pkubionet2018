@@ -466,6 +466,349 @@ ul li {
   border: 0px solid #3f3f3f;
 }
 
+.schedule-container {
+  position: relative;
+  background-color: #f8f8f8;
+  color: #3f3f3f;
+  text-align: left;
+  padding: 10px 0 10px;
+  margin: 10px 0 0;
+
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: 5rem 8rem 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "time900 stage stage" "time910 stage stage" "time915 stage stage"
+  "time935 stage stage" "time955 stage stage" "time1015 stage stage"
+  "time1035 stage stage" "time1040 stage stage" "time1055 stage stage"
+  "time1115 stage stage" "time1130 stage stage" "time1145 stage stage"
+  "time1200 stage stage" "time1300 stage stage" "time1305 stage stage" "time1340 stage stage"
+  "time1345 stage stage" "time1405 stage stage" "time1425 stage stage" "time1445 stage stage"
+  "time1500 stage stage" "time1505 stage stage" "time1525 stage stage"
+  "time1540 stage stage" "time1550 stage stage" "time1600 stage stage"
+  "time1620 stage stage" "time1710 stage stage" "time1720 stage stage" "time1730 stage stage"
+  ;
+
+}
+
+/**
+ * Time
+ */
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: thin dotted #ccc;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+.time.start-900 {
+  grid-area: time900;
+}
+.time.start-910 {
+  grid-area: time910;
+}
+.time.start-915 {
+  grid-area: time915;
+}
+.time.start-935 {
+  grid-area: time935;
+}
+.time.start-955 {
+  grid-area: time955;
+}
+.time.start-1015 {
+  grid-area: time1015;
+}
+.time.start-1035 {
+  grid-area: time1035;
+}
+.time.start-1040 {
+  grid-area: time1040;
+}
+.time.start-1055 {
+  grid-area: time1055;
+}
+.time.start-1115 {
+  grid-area: time1115;
+}
+.time.start-1130 {
+  grid-area: time1130;
+}
+.time.start-1145 {
+  grid-area: time1145;
+}
+.time.start-1200 {
+  grid-area: time1200;
+}
+.time.start-1300 {
+  grid-area: time1300;
+}
+.time.start-1305 {
+  grid-area: time1305;
+}
+.time.start-1340 {
+  grid-area: time1340;
+}
+.time.start-1345 {
+  grid-area: time1345;
+}
+.time.start-1405 {
+  grid-area: time1405;
+}
+.time.start-1425 {
+  grid-area: time1425;
+}
+.time.start-1445 {
+  grid-area: time1445;
+}
+.time.start-1500 {
+  grid-area: time1500;
+}
+.time.start-1505 {
+  grid-area: time1505;
+}
+.time.start-1525 {
+  grid-area: time1525;
+}
+.time.start-1540 {
+  grid-area: time1540;
+}
+.time.start-1550 {
+  grid-area: time1550;
+}
+.time.start-1600 {
+  grid-area: time1600;
+}
+.time.start-1620 {
+  grid-area: time1620;
+}
+.time.start-1710 {
+  grid-area: time1710;
+}
+.time.start-1720 {
+  grid-area: time1720;
+}
+.time.start-1730 {
+  grid-area: time1730;
+}
+/**
+ * Event
+ */
+.event {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.2rem 1rem;
+  background-color: #81D4FA;
+  border-radius: 0.2rem;
+  font-size:1.2rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+.event span {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-weight: normal;
+}
+.event.start-900 {
+  grid-row-start: time900;
+}
+.event.end-900 {
+  grid-row-end: time900;
+}
+.event.start-910 {
+  grid-row-start: time910;
+}
+.event.end-910 {
+  grid-row-end: time910;
+}
+.event.start-915 {
+  grid-row-start: time915;
+}
+.event.end-915 {
+  grid-row-end: time915;
+}
+.event.start-935 {
+  grid-row-start: time935;
+}
+.event.end-935 {
+  grid-row-end: time935;
+}
+.event.start-955 {
+  grid-row-start: time955;
+}
+.event.end-955 {
+  grid-row-end: time955;
+}
+.event.start-1015 {
+  grid-row-start: time1015;
+}
+.event.end-1015 {
+  grid-row-end: time1015;
+}
+.event.start-1035 {
+  grid-row-start: time1035;
+}
+.event.end-1035 {
+  grid-row-end: time1035;
+}
+.event.start-1040 {
+  grid-row-start: time1040;
+}
+.event.end-1040 {
+  grid-row-end: time1040;
+}
+.event.start-1055 {
+  grid-row-start: time1055;
+}
+.event.end-1055 {
+  grid-row-end: time1055;
+}
+.event.start-1115 {
+  grid-row-start: time1115;
+}
+.event.end-1115 {
+  grid-row-end: time1115;
+}
+.event.start-1130 {
+  grid-row-start: time1130;
+}
+.event.end-1130 {
+  grid-row-end: time1130;
+}
+.event.start-1145 {
+  grid-row-start: time1145;
+}
+.event.end-1145 {
+  grid-row-end: time1145;
+}
+.event.start-1200 {
+  grid-row-start: time1200;
+}
+.event.end-1200 {
+  grid-row-end: time1200;
+}
+.event.start-1300 {
+  grid-row-start: time1300;
+}
+.event.end-1300 {
+  grid-row-end: time1300;
+}
+.event.start-1305 {
+  grid-row-start: time1305;
+}
+.event.end-1305 {
+  grid-row-end: time1305;
+}
+.event.start-1340 {
+  grid-row-start: time1340;
+}
+.event.end-1340 {
+  grid-row-end: time1340;
+}
+.event.start-1345 {
+  grid-row-start: time1345;
+}
+.event.end-1345 {
+  grid-row-end: time1345;
+}
+.event.start-1405 {
+  grid-row-start: time1405;
+}
+.event.end-1405 {
+  grid-row-end: time1405;
+}
+.event.start-1425 {
+  grid-row-start: time1425;
+}
+.event.end-1425 {
+  grid-row-end: time1425;
+}
+.event.start-1445 {
+  grid-row-start: time1445;
+}
+.event.end-1445 {
+  grid-row-end: time1445;
+}
+.event.start-1500 {
+  grid-row-start: time1500;
+}
+.event.end-1500 {
+  grid-row-end: time1500;
+}
+.event.start-1505 {
+  grid-row-start: time1505;
+}
+.event.end-1505 {
+  grid-row-end: time1505;
+}
+.event.start-1525 {
+  grid-row-start: time1525;
+}
+.event.end-1525 {
+  grid-row-end: time1525;
+}
+.event.start-1540 {
+  grid-row-start: time1540;
+}
+.event.end-1540 {
+  grid-row-end: time1540;
+}
+.event.start-1550 {
+  grid-row-start: time1550;
+}
+.event.end-1550 {
+  grid-row-end: time1550;
+}
+.event.start-1600 {
+  grid-row-start: time1600;
+}
+.event.end-1600 {
+  grid-row-end: time1600;
+}
+.event.start-1620 {
+  grid-row-start: time1620;
+}
+.event.end-1620 {
+  grid-row-end: time1620;
+}
+.event.start-1710 {
+  grid-row-start: time1710;
+}
+.event.end-1710 {
+  grid-row-end: time1710;
+}
+.event.start-1720 {
+  grid-row-start: time1720;
+}
+.event.end-1720 {
+  grid-row-end: time1720;
+}
+.event.length-1 {
+  grid-column-end: span 1;
+}
+.event.length-2 {
+  grid-column-end: span 2;
+}
+
+.event.stage-intro {
+  background-color: #FFA726;
+  text-align: left
+}
+.event.stage-speaker {
+  background-color: #81D4FA;
+  text-align: left
+}
+.event.stage-session {
+  background-color: #9CCC65;
+  text-align: left
+}
+.event.stage-social {
+  background-color: #F0F0F0;
+}
 /*
 * 6.7 Section: Schedule
 */
