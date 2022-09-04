@@ -476,18 +476,18 @@ ul li {
 
   display: grid;
   grid-gap: 0.2rem;
-  grid-template-columns: 5rem 8rem 1fr;
+  grid-template-columns: 6rem 6rem 1.5fr, 0.7fr, 1.1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "time900 stage stage" "time910 stage stage" "time915 stage stage"
-  "time935 stage stage" "time955 stage stage" "time1015 stage stage"
-  "time1035 stage stage" "time1040 stage stage" "time1055 stage stage"
-  "time1115 stage stage" "time1130 stage stage" "time1145 stage stage"
-  "time1200 stage stage" "time1300 stage stage" "time1305 stage stage" "time1340 stage stage"
-  "time1345 stage stage" "time1405 stage stage" "time1425 stage stage" "time1445 stage stage"
-  "time1500 stage stage" "time1505 stage stage" "time1525 stage stage"
-  "time1540 stage stage" "time1550 stage stage" "time1600 stage stage"
-  "time1620 stage stage" "time1710 stage stage" "time1720 stage stage" "time1730 stage stage"
-  ;
+  grid-template-areas: "time900 stage stage stage stage" "time910 stage stage stage stage" "time915 stage stage stage stage"
+  "time935 stage stage stage stage" "time955 stage stage stage stage" "time1015 stage stage stage stage"
+  "time1035 stage stage stage stage" "time1040 stage stage stage stage" "time1055 stage stage stage stage"
+  "time1115 stage stage stage stage" "time1130 stage stage stage stage" "time1145 stage stage stage stage"
+  "time1200 stage stage stage stage" "time1300 stage stage stage stage" "time1305 stage stage stage stage" "time1340 stage stage stage stage"
+  "time1345 stage stage stage stage" "time1405 stage stage stage stage" "time1425 stage stage stage stage" "time1445 stage stage stage stage"
+  "time1500 stage stage stage stage" "time1505 stage stage stage stage" "time1525 stage stage stage stage"
+  "time1540 stage stage stage stage" "time1550 stage stage stage stage" "time1600 stage stage stage stage"
+  "time1620 stage stage stage stage"
+  "time1710 stage stage stage stage" "time1720 stage stage stage stage" "time1730 stage stage stage stage";
 
 }
 
@@ -496,11 +496,12 @@ ul li {
  */
 .time {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: flex-end;
   border-top: thin dotted #ccc;
   height: 100%;
   padding: 0 0.5rem;
+  font-size: 18px
 }
 .time.start-900 {
   grid-area: time900;
@@ -793,21 +794,33 @@ ul li {
 .event.length-2 {
   grid-column-end: span 2;
 }
-
+.event.length-3 {
+  grid-column-end: span 3;
+}
+.event.length-4 {
+  grid-column-end: span 4;
+}
+.event.length-5 {
+  grid-column-end: span 5;
+}
 .event.stage-intro {
-  background-color: #FFA726;
+  background-color: #FAD7A0;
   text-align: left
 }
 .event.stage-speaker {
-  background-color: #81D4FA;
+  background-color: #85C1E9;
   text-align: left
 }
 .event.stage-session {
-  background-color: #9CCC65;
+  background-color: #ABEBC6;
   text-align: left
 }
 .event.stage-social {
   background-color: #F0F0F0;
+}
+.event.stage-panel {
+  background-color: #E8DAEF;
+  text-align: left
 }
 /*
 * 6.7 Section: Schedule
@@ -834,8 +847,8 @@ ul li {
 }
 .partner .partner-box-2 {
   background: url(../images/partner/partner-2.png) no-repeat center center/contain;
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
 }
 .partner .partner-box-3 {
   background: url(../images/partner/partner-3.png) no-repeat center center/contain;
@@ -876,7 +889,7 @@ ul li {
 }
 .partner .partner-box-12 {
   background: url(../images/partner/partner-12.png) no-repeat center center/contain;
-  height: 200px;
+  height: 100px;
   width: 200px;
 }
 .partner .partner-box-13 {
