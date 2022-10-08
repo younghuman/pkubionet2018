@@ -862,15 +862,23 @@ ul li {
 }
 .partner .partner-box-5 {
   background: url(../images/partner/partner-5.jpeg) no-repeat center center/contain;
+  height: 200px;
+  width: 200px;
 }
 .partner .partner-box-6 {
   background: url(../images/partner/partner-6.png) no-repeat center center/contain;
+  height: 200px;
+  width: 200px;
 }
 .partner .partner-box-7 {
   background: url(../images/partner/partner-7.png) no-repeat center center/contain;
+  height: 200px;
+  width: 200px;
 }
 .partner .partner-box-8 {
   background: url(../images/partner/partner-8.png) no-repeat center center/contain;
+  height: 200px;
+  width: 200px;
 }
 .partner .partner-box-9 {
   background: url(../images/partner/partner-9.png) no-repeat center center/contain;
